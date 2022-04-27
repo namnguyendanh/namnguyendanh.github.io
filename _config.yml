@@ -26,10 +26,9 @@ search: true
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
-permalink: /:categories/:title/
+permalink: /:categories/:title
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -60,9 +59,6 @@ author:
   avatar: "/assets/images/bio-photo.jpg"
   bio: "Cloud computing enthusiast. I am interested in Machine Learning, NLP, Data Science, Modern Data Architecture and Algorithms. My goal is to become an excellent programmer, applying technology to improve the quality of our lives."
   links:
-    # - label: "Technical Handbook"
-    #   icon: "fas fa-fw fa-link"
-    #   url: "https://overcodedzz.github.io/handbook/"
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
       url: "https://www.linkedin.com/in/namnguyendanh/"
@@ -115,7 +111,7 @@ tag_archive:
 collections:
   projects:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:path
 
 repository: namnguyendanh/namnguyendanh.github.io
 github: [metadata]
