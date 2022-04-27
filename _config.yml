@@ -13,14 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: DM
-email: minhdq99hp@gmail.com
+title: NDN
+email: namnd2802@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My name is Dang Quang Minh. I’m a senior student at Hanoi University of Science and Technology (HUST). My major is Information Communication and Technology (ICT).
-
-  In my opinion, writing blog is a good way to learn, especially for a developer. I’ve been writing this blog since the very first month of my university. The main purpose of this blog is to help me strengthening my knowledge. You can see that most of posts is about technology, programming, AI, hardware,… I also write posts about my opinion, my reviews and my experience.
-twitter_username: minhdq99hp
-github_username: minhdq99hp
+  My name is Nguyen Danh Nam.
+twitter_username: namndpy
+github_username: namnguyendanh
 minimal_mistakes_skin: default
 search: true
 
@@ -58,40 +56,34 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Dang Minh"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "HUST Senior student. Developer. Interested in what computer can do.\n\nThis is my final year before graduation, so I'm kind of busy most of the time. Please check out this website (overcodedzz.github.io/handbook/) for my recent posts."
+  name: "Nguyen Danh Nam"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Cloud computing enthusiast. I am interested in Machine Learning, NLP, Data Science, Modern Data Architecture and Algorithms. My goal is to become an excellent programmer, applying technology to improve the quality of our lives."
   links:
-    - label: "Technical Handbook"
-      icon: "fas fa-fw fa-link"
-      url: "https://overcodedzz.github.io/handbook/"
+    # - label: "Technical Handbook"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://overcodedzz.github.io/handbook/"
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
-      url: "https://linkedin.com/in/minhdq99hp"
+      url: "https://www.linkedin.com/in/namnguyendanh/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/minhdq99hp"
+      url: "https://www.facebook.com/nam.nd.92/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/minhdq99hp"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/minh.create.stuffs"
+      url: "https://github.com/namnguyendanh"
 
 footer:
   links:
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
-      url: "https://linkedin.com/in/minhdq99hp"
+      url: "https://linkedin.com/in/namnguyendanh"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://twitter.com/minhdq99hp"
+      url: "https://twitter.com/namndpy"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/minhdq99hp"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/minh.create.stuffs"
+      url: "https://github.com/namnguyendanh"
 
 defaults:
   # _posts
@@ -122,13 +114,13 @@ tag_archive:
 
 collections:
   projects:
-    output: true 
+    output: true
     permalink: /:collection/:path/
 
-repository: minhdq99hp/minhdq99hp.github.io
+repository: namnguyendanh/namnguyendanh.github.io
 github: [metadata]
 
 comments:
   provider: "disqus"
   disqus:
-    shortname: "minhdq99hp-github-io"
+    shortname: "namnguyendanh-github-io"
