@@ -5,9 +5,9 @@ title: "About"
 Hi all, 
 
 I've categorized all posts into 3 categories:
-- Technology (work with computer)
-- Communicate (work with people) 
-- Mind (work with... myself)
+- Technology
+- Tea culture
+- ...
 
 
 You can also find the post you want by using tags or search bar. Some posts that are not well edited will have their title start with '[Draft]'. 
