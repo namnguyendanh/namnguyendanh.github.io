@@ -1,5 +1,5 @@
 ---
-title:  "Những điều rút ra từ phim “The secret life of Walter Mitty”"
+title:  "Sử dụng các mô hình deep learning trong xử lý ảnh với module DNN OpenCV"
 header:
     # image: /images/2017-10-23-review-the-secret-life-of-walter-mitty/header_image.jpg
     caption: Deep Learning with OpenCV DNN Module
