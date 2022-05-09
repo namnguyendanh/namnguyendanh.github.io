@@ -9,8 +9,6 @@ tags:
     - infrastructure
 ---
 
-# Tổng quan về Load balancing
-
 ## Khái niệm cơ bản
 Load Balancing (tạm dịch Cân bằng tải), là một thành phần quan trọng của cơ sở hạ tầng thường được sử dụng để cải thiện hiệu suất và độ tin cậy của các trang web, các ứng dụng, cơ sở dữ liệu và các dịch vụ khác bằng cách phân phối khối lượng công việc trên nhiều máy chủ. Hiểu đơn giản là phân tán các request đến các tài nguyên tính toán ví dụ như các server và database. Ở mỗi trường hợp, load balancer trả về một response từ tài nguyên tính toán đến một client thích hợp.
 
