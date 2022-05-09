@@ -11,7 +11,7 @@ tags:
     - opencv
 ---
 
-# Load model với opencv
+## Load model với opencv
 
 
 Xử lý ảnh là đề tài quen thuộc với mọi người. Hiện tại có rất nhiều thư viện hỗ trợ xử lý ảnh hoặc các thư viện deep learning như opencv, tensorflow, pytorch, ...
@@ -28,23 +28,23 @@ Nhưng thực tế là nếu phát triển model từ giai đoạn xử lý data
 Hiện tại có nhiều cách serving model với C++ như sử tensorRT. Tuy nhiên cá nhân mình chưa tìm hiểu sâu về tensorRT nên không thể viết về nó được. Phương pháp hiện tại của mình chính là viết một thư viện C++ triển khai các layer, activation function bằng C++ sau đó load factory model để convert sang C++.
 Điều khó khăn là viết lại thư viện deeplearning đòi hỏi rất nhiều kiến thức về ngôn ngữ lập trình C++ chuyên sâu kết hợp với kiến thức vững chắc về deeplearning. Thật may là thư viện opencv đã triển khai code wrapper các layer sang C++ (nhưng hiện tại chỉ có thể xử lý các mô hình thiên cho xử lý ảnh với nhân CNN)
 
-##Cài đặt thư viện opencv
+## Cài đặt thư viện opencv
 
 Trước hết mình xin hướng dẫn mọi người cài đặt opencv C++ trên Ubuntu (Ubuntu đã hỗ trợ gcc++)
 
-### Update Ubuntu system package
+#### Update Ubuntu system package
 
 ```cmd
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-### Install required tools and packages
+#### Install required tools and packages
 
 ```cmd
 sudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 ```
 
-### Download OpenCV sources using git
+#### Download OpenCV sources using git
 
 ```cmd
 sudo -s
@@ -63,7 +63,7 @@ git clone https://github.com/Itseez/opencv.git
 git clone https://github.com/Itseez/opencv_contrib.git
 ```
 
-### Build and install opencv
+#### Build and install opencv
 
 ```console
 cd opencv
@@ -81,7 +81,7 @@ cd release
 cmake -D BUILD_TIFF=ON -D WITH_CUDA=OFF -D ENABLE_AVX=OFF -D WITH_OPENGL=OFF -D WITH_OPENCL=OFF -D WITH_IPP=OFF -D WITH_TBB=ON -D BUILD_TBB=ON -D WITH_EIGEN=OFF -D WITH_V4L=OFF -D WITH_VTK=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D OPENCV_GENERATE_PKGCONFIG=ON -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=/opt/opencv_contrib/modules /opt/opencv/
 ```
 
-### j4 - Num thread in your device
+#### j4 - Num thread in your device
 Ví dụ máy tính của bạn là 4 core 8 luồng thì chọn j8 nếu là 8 core 16 luồng thì chọn j16. Hoặc bạn hoàn toàn có thể chọn số luồng nhỏ hơn số luồng của computer. Như ví dụ mình sẽ chọn là 4 luồng (j4)
 ```console
 make -j4
@@ -100,7 +100,7 @@ exit
 cd ~
 ```
 
-### Find and set "opencv.pc" file path
+#### Find and set "opencv.pc" file path
 
 ```console
 ls /usr/local/lib/pkgconfig/
@@ -115,7 +115,7 @@ Câu lệnh trên mọi người sẽ hoàn toàn không tìm được ở bất
 pkg-config --modversion opencv
 ```
 
-### Build file with opencv
+#### Build file with opencv
 
 ```console
 g++ m.cpp -o app `pkg-config --cflags --libs opencv`
