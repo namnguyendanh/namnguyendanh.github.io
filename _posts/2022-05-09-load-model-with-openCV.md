@@ -34,19 +34,19 @@ Trước hết mình xin hướng dẫn mọi người cài đặt opencv C++ tr
 
 #### Update Ubuntu system package
 
-```cmd
+```console
 sudo apt-get update && sudo apt-get upgrade
 ```
 
 #### Install required tools and packages
 
-```cmd
+```console
 sudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 ```
 
 #### Download OpenCV sources using git
 
-```cmd
+```console
 sudo -s
 ```
 
@@ -326,7 +326,7 @@ void prediction(Mat& frame)
 
 Trong opencv C++ thì image sẽ được lưu dưới dạng struct là Mat. Do bài toán của mình là sử dụng ảnh xám nên code tạo blobFromImage sẽ là như sau:
 ```cpp
-        cv::Mat blob = cv::dnn::blobFromImage(face, 1 / 255.F, cv::Size(64, 64), cv::Scalar(), false, false);
+cv::Mat blob = cv::dnn::blobFromImage(face, 1 / 255.F, cv::Size(64, 64), cv::Scalar(), false, false);
 
 ```
 
