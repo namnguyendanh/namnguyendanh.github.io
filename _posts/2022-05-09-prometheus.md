@@ -27,7 +27,7 @@ Các đặc điểm của một hệ thống monitoring:
 
 Các thành phần cơ bản của một hệ thống giám sát có thể mô tả như sau:
 
-![MonitorSystem.png](https://crowi.pionero.io/files/61b8198fed37b4007c37e61b)
+![MonitorSystem.png](/images/2022-05-09-prometheus/1.png)
 
 Các thành phần chính sẽ là:
 
@@ -91,7 +91,7 @@ Hầu hết các thành phần được viết trên ngôn ngữ lập trình Go
 
 ### 3. Kiến trúc hệ thống
 
-![prometheus-architecture.png](https://crowi.pionero.io/files/61bc2d37ed37b4007c37e63f)
+![prometheus-architecture.png](/images/2022-05-09-prometheus/2.png)
 
 Cách hoạt động:
 
@@ -134,9 +134,12 @@ Danh sách các Exporter được dựng sẵn có [ở đây](https://prometheu
 
 <br><br>
 <p align="center">
-  <img width="460" height="300" src="https://crowi.pionero.io/files/61bc2fc0ed37b4007c37e640">
+  <img width="460" height="300" src="./images/2022-06-09-prometheus/3.png">
 </p>
 <br>
+
+<!-- ![prometheus-architecture.png](/images/2022-05-09-prometheus/3.png) -->
+
 
 Máy chủ Prometheus (node master) bao gồm 3 thành phần chính:
 - Retrieval: thu thập thông tin từ các nguồn cần giám sát (có thể coi là node slave) như máy chủ application, máy chủ db, ...
@@ -226,7 +229,7 @@ Mặc định exporter sẽ chạy trên cổng 9100
 
 Bạn có thể kiếm tra bằng cách truy vập vào địa chỉ: http://localhost:9100. Như dưới, là mình kiểm tra qua địa chỉ ip của server.
 
-![Screenshot from 2021-12-15 17-56-00.png](https://crowi.pionero.io/files/61bc3331ed37b4007c37e641)
+![Screenshot from 2021-12-15 17-56-00.png](/images/2022-05-09-prometheus/4.png)
 
 
 #### 5.2 Cài đặt Prometheus
@@ -359,14 +362,14 @@ sudo systemctl start prometheus
 ```
  Truy cập địa chỉ: http://localhost:9090. Dưới đây là hình mình họa:
 
-![Screenshot from 2021-12-17 13-59-54.png](https://crowi.pionero.io/files/61bc3578ed37b4007c37e642)
+![Screenshot from 2021-12-17 13-59-54.png](/images/2022-05-09-prometheus/5.png)
 
 Thử một truy vấn: 
 
-![Screenshot from 2021-12-17 14-00-46.png](https://crowi.pionero.io/files/61bc35b9ed37b4007c37e643)
+![Screenshot from 2021-12-17 14-00-46.png](/images/2022-05-09-prometheus/7.png)
 
 
-![Screenshot from 2021-12-17 14-00-56.png](https://crowi.pionero.io/files/61bc35c0ed37b4007c37e644)
+![Screenshot from 2021-12-17 14-00-56.png](/images/2022-05-09-prometheus/6.png)
 
 
 ### 6. Lời kết
