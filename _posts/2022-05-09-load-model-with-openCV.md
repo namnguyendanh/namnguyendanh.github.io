@@ -4,7 +4,7 @@ header:
     # image: /images/2017-10-23-review-the-secret-life-of-walter-mitty/header_image.jpg
     caption: Deep Learning with OpenCV DNN Module
 categories: 
-    - Tech
+    - Technology
 tags:
     - machine-learning
     - computer-vision
