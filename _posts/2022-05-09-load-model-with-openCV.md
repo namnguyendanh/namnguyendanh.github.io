@@ -23,7 +23,7 @@ Nhưng thực tế là nếu phát triển model từ giai đoạn xử lý data
 - Serving model bằng C++
 
 
-##Hướng xử lý cho phương pháp nêu ra
+## Hướng xử lý cho phương pháp nêu ra
 
 Hiện tại có nhiều cách serving model với C++ như sử tensorRT. Tuy nhiên cá nhân mình chưa tìm hiểu sâu về tensorRT nên không thể viết về nó được. Phương pháp hiện tại của mình chính là viết một thư viện C++ triển khai các layer, activation function bằng C++ sau đó load factory model để convert sang C++.
 Điều khó khăn là viết lại thư viện deeplearning đòi hỏi rất nhiều kiến thức về ngôn ngữ lập trình C++ chuyên sâu kết hợp với kiến thức vững chắc về deeplearning. Thật may là thư viện opencv đã triển khai code wrapper các layer sang C++ (nhưng hiện tại chỉ có thể xử lý các mô hình thiên cho xử lý ảnh với nhân CNN)
@@ -34,19 +34,19 @@ Trước hết mình xin hướng dẫn mọi người cài đặt opencv C++ tr
 
 ### Update Ubuntu system package
 
-```console
+```cmd
 sudo apt-get update && sudo apt-get upgrade
 ```
 
 ### Install required tools and packages
 
-```console
+```cmd
 sudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 ```
 
 ### Download OpenCV sources using git
 
-```console
+```cmd
 sudo -s
 ```
 
@@ -123,7 +123,7 @@ g++ m.cpp -o app `pkg-config --cflags --libs opencv`
 Trong đó m.cpp là filde C++ serving model của mình.
 
 
-##Load model với C++
+## Load model với C++
 
 Bước tiếp theo là serving với C++. Lúc này chúng ta cần lưu weight cho model factory để triển khai. Nếu model bạn sử dụng keras và lưu dưới dạng file hdf5 thì cần load lại model với GraphDef sau đó freeze model dưới dạng file với đuôi mở rộng là .pb và .pbtxt. Dưới đây là code minh họa:
 
@@ -181,7 +181,8 @@ tf.io.write_graph(graph_or_graph_def=frozen_func.graph,
 ```
 
 Sau khi có model factory dưới dạng file .pb và .pbtxt thì ở C++ chúng ta sẽ triển khai như sau:
-```C++
+
+```cpp
 using namespace dnn;
 
 class Singleton {
@@ -229,7 +230,7 @@ Singleton* Singleton::instance = 0;
 Hàm readNetFromTensorflow ưu cầu cả file .pb và file .pbtxt nhưng thực tế mình sử dụng thì khi freeze model nếu chúng ta sử dụng file .pbtxt thì sẽ lỗi, mình cũng không rõ nguyên nhân tại sao. Thế nên ở bước load model này mình chỉ cần sử dụng file .pb là đủ. 
 Mọi người có nhận thấy là load model mình sử dụng singleton design pattern.
 
-```C++
+```cpp
 #include <iostream>
 #include <vector>
 #include <fstream>
@@ -324,14 +325,14 @@ void prediction(Mat& frame)
 ```
 
 Trong opencv C++ thì image sẽ được lưu dưới dạng struct là Mat. Do bài toán của mình là sử dụng ảnh xám nên code tạo blobFromImage sẽ là như sau:
-```c++
+```cpp
         cv::Mat blob = cv::dnn::blobFromImage(face, 1 / 255.F, cv::Size(64, 64), cv::Scalar(), false, false);
 
 ```
 
 Sẽ có 1 dimension toàn là 0, nếu mọi người sử dụng ảnh với 3 channel RGB thì cần thay đổi một chút ở câu lệnh này.
 
-###Lời kết
+## Lời kết
 Như vậy, mình vừa viết hướng dẫn cơ bản để sử dụng opencv cho load model deeplearning được phát triển với Python. Hiện tại, để đáp ứng tốc độ xử lý cũng như nhúng vào các edge device thì cần serving model với C++ là tất yếu.
 Hi vọng qua bài viết này, mọi người hoàn toàn có thể làm lại và chính xác. Mọi thắc mắc hãy comment ở đây hoặc ping mình trên Slack, mình sẽ phản hồi sớm nhất có thể.
 Thanks for reading !!!!
