@@ -132,13 +132,13 @@ Danh sách các Exporter được dựng sẵn có [ở đây](https://prometheu
 
 #### 4.3 Prometheus server
 
-<br><br>
+<!-- <br><br>
 <p align="center">
-  <img width="460" height="300" src="/images/2022-06-09-prometheus/3.png">
+![prometheus-architecture.png](/images/2022-05-09-prometheus/3.png)
 </p>
-<br>
+<br> -->
 
-<!-- ![prometheus-architecture.png](/images/2022-05-09-prometheus/3.png) -->
+![prometheus-architecture.png](/images/2022-05-09-prometheus/3.png)
 
 
 Máy chủ Prometheus (node master) bao gồm 3 thành phần chính:
