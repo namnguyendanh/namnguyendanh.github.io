@@ -134,7 +134,7 @@ Danh sách các Exporter được dựng sẵn có [ở đây](https://prometheu
 
 <br><br>
 <p align="center">
-  <img width="460" height="300" src="./images/2022-06-09-prometheus/3.png">
+  <img width="460" height="300" src="/images/2022-06-09-prometheus/3.png">
 </p>
 <br>
 
