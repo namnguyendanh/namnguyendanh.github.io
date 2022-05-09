@@ -96,6 +96,7 @@ Hầu hết các thành phần được viết trên ngôn ngữ lập trình Go
 Cách hoạt động:
 
 - Các jobs được phân chia thành short-lived và long-lived jobs/Exporter:
+
     - Short-lived là những job sẽ tồn tại trong thời gian ngắn và prometheus-server sẽ không kịp scrapes metrics của các jobs này. Do đó, những short-lived jobs sẽ push (đẩy) các metrics đến một nơi gọi là Pushgateway. Pushgateway sẽ là nơi sẽ phơi bày metrics ra và prometheus-server sẽ lấy được metrics của short-lived thông qua Pushgateway.
 
     - Long-lived jobs/Exporter: Là những job sẽ tồn tại lâu dài. Các Exporter sẽ được chạy như dưới dạng 1 service. Exporter sẽ có nhiệm vụ thu thập metrics và phơi bày metrics đấy ra. Prometheus-server sẽ scrapes được metrics thông qua hành động pull (kéo).
@@ -163,43 +164,43 @@ Tiếp theo, mình cũng cài đặt qua các nén chứ không cài đặt dự
 
 Chúng ta cùng nhau cài đặt Node Exporter như một service chạy trên server. Đầu tiên chúng ta cần tải phiên bản mới nhất của Node Exporter về. Các bạn có thể tìm kiếm phiên bản của Node Exporter tại https://prometheus.io/download/.
 
-```cmd
+```bash
 wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
 ```
 
 Giải nén mục mới tải về:
 
-```cmd
+```bash
 tar -xvzf node_exporter-1.3.1.linux-amd64.tar.gz
 ```
 
 Đổi tên thư mục
 
-```cmd
+```bash
 mv node_exporter-1.3.1.linux-amd64.tar.gz node_exporter
 ```
 Tạo một user cho việc quản lý exporter:
 
-```cmd
+```bash
 sudo useradd -rs /bin/false node_exporter
 ```
 
 Copy binary file trong thư mục đã giải nén tới địa chỉ /usr/local/bin:
 
-```cmd
+```bash
 cd node_exporter
 cp node_exporter /usr/local/bin
 ```
 
 Thiết lập quyền cho binary file:
 
-```cmd
+```bash
 chown node_exporter:node_exporter /usr/local/bin/node_exporter
 ```
 
 Tạo một service cho việc chạy Node Exporter
 
-```cmd
+```bash
 cd /lib/systemd/system
 sudo nano node_exporter.service
 ```
