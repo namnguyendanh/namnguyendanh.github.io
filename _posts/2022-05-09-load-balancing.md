@@ -80,7 +80,7 @@ LB (Load Balancing) chỉ chuyển tiếp lưu lượng đến "healthy" backend
 - Dynamic Round Robin: gần giống với Weighted Round Robin. Điểm khác biệt là trọng số không cố định mà thay đổi liên tục thông qua sự kiểm tra server thường xuyên (xem con nào khỏe, con nào yếu, con nào đang phục vụ nhiều/ít)
 
 - Least Connections: tư tưởng chính là ai rảnh nhất thì người đó làm, lựa chọn máy chủ ít kết nối nhất trong hệ thống. Thuật toán này phải đếm số kết nối trong hệ thống.
- - Ưu điểm: có khả năng hoạt động tốt, ngay cả khi các tải cảu các kết nối biến thiên trong khoảng lớn.
+    - Ưu điểm: có khả năng hoạt động tốt, ngay cả khi các tải cảu các kết nối biến thiên trong khoảng lớn.
 
 - Least Response Time (Fastest): thuật toán này dựa trên tính toán thời gian đáp ứng của server mà lựa ra server nhanh nhất. Thời gian đáp ứng được tính là khoảng thời gian giữa thời điểm gửi một gói tin đến server và thời điểm nhận được gói tin trả lời. Thuật toán này thường dùng khi server ở các vị trí địa lý khác nhau)
 
