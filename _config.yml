@@ -57,7 +57,7 @@ plugins:
 author:
   name: "Nguyen Danh Nam"
   avatar: "/assets/images/nam.jpg"
-  bio: "Cloud computing enthusiast. I am interested in Machine Learning, NLP, Data Science, Modern Data Architecture and Algorithms. My goal is to become an excellent programmer, applying technology to improve the quality of our lives."
+  bio: "Cloud computing enthusiast. I am interested in Machine Learning, NLP, Data Science, Modern Data Architecture, and algorithms. My goal is to become an excellent programmer and to apply technology to improve the quality of our lives."
   links:
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
