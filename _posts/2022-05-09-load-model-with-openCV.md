@@ -16,9 +16,9 @@ tags:
 
 Xử lý ảnh là đề tài quen thuộc với mọi người. Hiện tại có rất nhiều thư viện hỗ trợ xử lý ảnh hoặc các thư viện deep learning như opencv, tensorflow, pytorch, ...
 
-Tuy nhiên, để đáp ứng được tốc độ xử lý realtime thì nếu sử dụng ngôn ngữ lập trình bậc cao như Python là rất khó. Vì vậy xu hướng trong xử lý anh là sử dụng ngôn ngữ lập trình bậc trung như C++ hoặc nhúng trên client với js.
+Tuy nhiên, để đáp ứng được tốc độ xử lý realtime thì nếu sử dụng ngôn ngữ lập trình bậc cao như Python là rất khó. Vì vậy xu hướng trong xử lý ảnh là sử dụng ngôn ngữ lập trình bậc trung như C++ hoặc nhúng trên client với js.
 
-Nhưng thực tế là nếu phát triển model từ giai đoạn xử lý data, build model đến train để đưa ra model factory mà sử dụng hoàn toàn là C++ là vô cùng khó khăn. Chính vì vậy chúng ta cần phát triển và triển khai model theo phương pháp sau:
+Nhưng thực tế là nếu phát triển model từ giai đoạn xử lý data, build model đến training và evaluation để đưa ra model factory mà sử dụng hoàn toàn là C++ là vô cùng khó khăn. Chính vì vậy chúng ta cần phát triển và triển khai model theo phương pháp sau:
 - Phát triển model factory bằng ngôn ngữ bậc cao như Python với các thư viện như Pytorch, Tensorflow
 - Serving model bằng C++
 
