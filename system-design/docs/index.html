@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<link rel='stylesheet' href='style.css'>
+	<link rel="shortcut icon" href="http://bit.ly/ghfavicon" width=32px>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+	<title>Grokking System and Object Oriented Design Interview</title>
+</head>
+<style>
+	ul{
+		list-style: none;
+	}
+	ul:not(li>ul){
+		padding-left: 0;
+	}
+	a:link {
+		color: inherit;
+	}
+</style>
+<body>
+<h1>Grokking the Object Oriented Design Interview</h1>
+<div id='toc'>
+	<ul>
+		<li><h2> Object-Oriented Design and UML</h2>
+		<ul>
+			<li><h3><a href="./grokking-ood/core/object-oriented-basics.html">Object oriented Basics</a></h3></li>
+			<li><h3><a href="./grokking-ood/core/OO-analysis-and-design.html">OO Analysis and Design</a></h3></li>
+			<li><h3><a href="./grokking-ood/core/what-is-uml.html">What is UML?</a></h3></li>
+			<li><h3><a href="./grokking-ood/core/use-case-diagram.html">Use Case Diagrams</a></h3></li>
+			<li><h3><a href="./grokking-ood/core/class-diagram.html">Class Diagram</a></h3></li>
+			<li><h3><a href="./grokking-ood/core/sequence-diagram.html">Sequence diagram</a></h3></li>
+			<li><h3><a href="./grokking-ood/core/activity-diagrams.html">Activity Diagrams</a></h3></li>
+		</ul>
+		</li>
+		<li><h2>Object Oriented Design Case Studies</h2>
+		<ul>
+			<li><h3>Design a Hotel Management System [<a href="./grokking-ood/examples/java/hotel-management-system.html">java</a>/<a href="./grokking-ood/examples/python/hotel-management-system.html">python</a>]</h3></li>
+			<li><h3>Design an Airline Management System [<a href="./grokking-ood/examples/java/airline-management-system.html">java</a>/<a href="./grokking-ood/examples/python/airline-management-system.html">python</a>]</h3></li>
+			<li><h3>Design an Amazon -  Online Shopping System [<a href="./grokking-ood/examples/java/amazon-online-shopping-system.html">java</a>/<a href="./grokking-ood/examples/python/amazon-online-shopping-system.html">python</a>]</h3></li>
+			<li><h3>Design an ATM [<a href="./grokking-ood/examples/java/atm.html">java</a>/<a href="./grokking-ood/examples/python/atm.html">python</a>]</h3></li>
+			<li><h3>Design BlackJack and a Deck of Cards [<a href="./grokking-ood/examples/java/blackjack-and-a-deck-of-cards.html">java</a>/<a href="./grokking-ood/examples/python/blackjack-and-a-deck-of-cards.html">python</a>]</h3></li>
+			<li><h3>Design a Car Rental System [<a href="./grokking-ood/examples/java/car-rental-system.html">java</a>/<a href="./grokking-ood/examples/python/car-rental-system.html">python</a>]</h3></li>
+			<li><h3>Design Chess [<a href="./grokking-ood/examples/java/chess.html">java</a>/<a href="./grokking-ood/examples/python/chess.html">python</a>]</h3></li>
+			<li><h3>Design CricInfo [<a href="./grokking-ood/examples/java/cricinfo.html">java</a>/<a href="./grokking-ood/examples/python/cricinfo.html">python</a>]</h3></li>
+			<li><h3>Design Facebook - A Social Network [<a href="./grokking-ood/examples/java/facebook.html">java</a>/<a href="./grokking-ood/examples/python/facebook.html">python</a>]</h3></li>
+			<li><h3>Design a Library Management Service [<a href="./grokking-ood/examples/java/library-management-system.html">java</a>/<a href="./grokking-ood/examples/python/library-management-system.html">python</a>]</h3></li>
+			<li><h3>Design LinkedIn [<a href="./grokking-ood/examples/java/linkedin.html">java</a>/<a href="./grokking-ood/examples/python/linkedin.html">python</a>]</h3></li>
+			<li><h3>Design Movie Ticket Booking System [<a href="./grokking-ood/examples/java/movie-ticket-booking-system.html">java</a>/<a href="./grokking-ood/examples/python/movie-ticket-booking-system.html">python</a>]</h3></li>
+			<li><h3>Design Online Stock Brokerage System [<a href="./grokking-ood/examples/java/online-stock-brokerage-system.html">java</a>/<a href="./grokking-ood/examples/python/online-stock-brokerage-system.html">python</a>]</h3></li>
+			<li><h3>Design a Parking Lot [<a href="./grokking-ood/examples/java/parking-lot.html">java</a>/<a href="./grokking-ood/examples/python/parking-lot.html">python</a>]</h3></li>
+			<li><h3>Design a Restaurant Management System [<a href="./grokking-ood/examples/java/restaurant-management-system.html">java</a>/<a href="./grokking-ood/examples/python/restaurant-management-system.html">python</a>]</h3></li>
+			<li><h3>Design Stack Overflow [<a href="./grokking-ood/examples/java/stack-overflow.html">java</a>/<a href="./grokking-ood/examples/python/stack-overflow.html">python</a>]</h3></li>
+		</ul>
+		</li>
+	</ul>
+</div>
+<h1>Grokking the System Design Interview</h1>
+<div id="toc1">
+	<ul>
+		<li><h2>Glossary of System Design Basics</h2>
+		<ul>
+			<li><h3><a href="./grokking-system-design/system-design-basics/system-design-basics.html">System Design Basics</a></h3></li>
+			<li><h3><a href="./grokking-system-design/system-design-basics/key-charactersitics-of-distributed-systems.html">Key Characteristics of Distributed Systems</a></h3></li>
+			<li><h3><a href="./grokking-system-design/system-design-basics/load-balancing.html">Load Balancing</a></h3></li>
+			<li><h3><a href="./grokking-system-design/system-design-basics/caching.html">Caching</a></h3></li>
+			<li><h3><a href="./grokking-system-design/system-design-basics/data-partitioning.html">Data Partitioning</a></h3></li>
+			<li><h3><a href="./grokking-system-design/system-design-basics/indexes.html">Indexes</a></h3></li>
+			<li><h3><a href="./grokking-system-design/system-design-basics/proxies.html">Proxies</a></h3></li>
+			<li><h3><a href="./grokking-system-design/system-design-basics/redundancy-and-replication.html">Redundancy and Replication</a></h3></li>
+			<li><h3><a href="./grokking-system-design/system-design-basics/sql-vs-nosql.html">SQL vs. NoSQL</a></h3></li>
+			<li><h3><a href="./grokking-system-design/system-design-basics/cap-theorem.html">CAP Theorem</a></h3></li>
+			<li><h3><a href="./grokking-system-design/system-design-basics/consistent-hashing.html">Consistent Hashing</a></h3></li>
+			<li><h3><a href="./grokking-system-design/system-design-basics/long-polling.html">Long-Polling vs WebSockets vs Server-Sent Events</a></h3></li>
+		</ul>
+		</li>
+		<li><h2>System Design Problems</h2>
+			<ul>
+				<li><h3><a href="./grokking-system-design/system-design-problems/system-design-interviews.html">System Design Interviews: A step by step guide</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/url-shortening-service-like-tiny-url.html">Designing a URL Shortening service like TinyURL</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/pastebin.html">Designing Pastebin</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/instagram.html">Designing Instagram</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/dropbox.html">Designing Dropbox</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/facebook-messenger.html">Designing Facebook Messenger</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/twitter.html">Designing Twitter</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/youtube-or-netflix.html">Designing Youtube or Netflix</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/typehead-suggestion.html">Designing Typeahead Suggestion</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/api-rate-limiter.html">Designing an API Rate Limiter</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/twitter-search.html">Designing Twitter Search</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/web-crwaler.html">Designing a Web Crawler</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/facebook-newsfeed.html">Designing Facebook’s Newsfeed</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/yelp-ornearby-friends.html">Designing Yelp or Nearby Friends</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/uber-backend.html">Designing Uber backend</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/ticket-master.html">Design Ticketmaster</a></h3></li>
+				<li><h3><a href="./grokking-system-design/system-design-problems/additional-resources.html">Additional Resources</a></h3></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<h1>Grokking the Coding Interview</h1>
+<div id="toc2">
+	<ul>
+		<li><h2>Interview Pattern - Introduction</h2>
+			<ul>
+				<li><h3><a href="./grokking-coding-interviews/1-introduction/1-Who-should-take-this-course.html">Who should take the course?</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/1-introduction/2-Course-Overview-Grokking-the-Coding-Interview-Patterns-for-Coding-Questions.html">Patterns for coding questions</a></h3></li>
+			</ul>
+		</li>
+		<li><h2>Interview Pattern - Sliding Window</h2>
+			<ul>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/1-Introduction/1.1-Introduction-Grokking-the-Coding-Interview-Patterns-for-Coding-Questions.html">Introduction</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/2-Maximum-Sum-Subarray-of-Size-K-easy/1.1-Maximum-Sum-Subarray-of-Size-K-easy.html">Maximum-Sum-Subarray-of-Size-K</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/3-Smallest-Subarray-with-a-given-sum-easy/1.1-Smallest-Subarray-with-a-given-sum-easy.html">Smallest-Subarray-with-a-given-sum</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/4-Longest-Substring-with-K-Distinct-Characters-medium/1.1-Longest-Substring-with-K-Distinct-Characters-medium.html">Longest-Substring-with-K-Distinct-Characters</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/5-Fruits-into-Baskets-medium/1.1-Fruits-into-Baskets-medium.html">Fruits-into-Baskets</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/6-No-repeat-Substring-hard/1.1-No-repeat-Substring-hard.html">No-repeat-Substring</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/7-Longest-Substring-with-Same-Letters-after-Replacement-hard/1.1-Longest-Substring-with-Letters-after-Replacement-hard.html">Longest-Substring-with-Letters-after-Replacement</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/8-Longest-Subarray-with-Ones-after-Replacement-hard/1.1-Longest-Subarray-with-Ones-after-Replacement-hard.html">Longest-Subarray-with-Ones-after-Replacement</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/9-Problem-Challenge-1/1.1-Problem-Challenge-1.html">Problem-Challenge</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/10-Solution-Review-Problem-Challenge-1/1.1-Solution-Review-Problem-Challenge-1.html">Solution-Review-Problem-Challenge-1</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/11-Problem-Challenge-2/1.1 Problem Challenge 2 - Grokking the Coding Interview_ Patterns for Coding Questions.html">Problem Challenge 2</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/12-Solution-Review-Problem-Challenge-2/1.1 Solution Review_ Problem Challenge 2 -.html">Solution-Review-Problem-Challenge-2</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/13-Problem-Challenge-3/1.1 Problem Challenge 3 - Grokking the Coding Interview_ Patterns for Coding Questions.html">Problem Challenge 3</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/14-Solution-Review-Problem-Challenge-3/1.1 Solution Review_ Problem Challenge 3 -.html">Solution-Review-Problem-Challenge-3</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/15-Problem-Challenge-4/1.1 Problem Challenge 4 - Grokking the Coding Interview_ Patterns for Coding Questions.html">Problem Challenge 4</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/2-patttern-sliding-window/16-Solution-Review-Problem-Challenge-4/1.1 Solution Review_ Problem Challenge 4 -.html">Solution-Review-Problem-Challenge-4</a></h3></li>
+			</ul>
+		</li>
+		<li><h2>Interview Pattern - Two Pointer</h2>
+			<ul>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/1-Introduction/Introduction-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Introduction</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/2-Pair-with-Target-Sum-easy/1.1-Pair-with-Target-Sum-easy-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Pair-with-Target-Sum</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/3-Remove-Duplicates-easy/1.1-Remove-Duplicates-easy-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Remove-Duplicates</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/4-Squaring-a-Sorted-Array-easy/1.1-Squaring-a-Sorted-Array-(easy)-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Squaring-a-Sorted-Array</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/5-Triplet-Sum-to-Zero-medium/1.1-Triplet-Sum-to-Zero-medium-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Triplet-Sum-to-Zero</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/6-Triplet-Sum-Close-to-Target-medium/1.4-Triplet-Sum-Close-to-Target-medium.html">Triplet-Sum-Close-to-Target</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/7-Triplets-with-Smaller-Sum-medium/1.1-Triplets-with-Smaller-Sum-medium.html">Triplets-with-Smaller-Sum</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/9-Dutch-National-Flag-Problem-medium/1.1-Dutch-National-Flag-Problem-medium.html">Dutch-National-Flag</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/10-Problem-Challenge-1/1.1-Problem-Challenge-1-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Problem-Challenge-1</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/11-Solution-Review-Problem-Challenge-1/1.1-Solution-Review_-Problem-Challenge-1.html">Solution-Review-Problem-Challenge-1</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/12-Problem-Challenge-2/1.1-Problem-Challenge-2-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Problem-Challenge-3</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/13-Solution-Review-Problem-Challenge-2/1.1-Solution-Review_-Problem-Challenge-2.html">Solution-Review-Problem-Challenge-2</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/14-Problem-Challenge-3/1.1-Problem-Challenge-3-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Problem-Challenge-3</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/3-pattern-two-pointer/15-Solution-Review-Problem-Challenge-3/1.1-Solution-Review_-Problem-Challenge-3.html">Solution-Review-Problem-Challenge-3</a></h3></li>
+			</ul>
+		</li>
+		<li><h2>Interview Pattern - Fast/Slow Pointer</h2>
+			<ul>
+				<li><h3><a href="./grokking-coding-interviews/4-pattern-fast-slow-pointers/1-Introduction/Introduction-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Introduction</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/4-pattern-fast-slow-pointers/2-LinkedList-Cycle-easy/1.1-LinkedList-Cycle-easy.html">LinkedList-Cycle</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/4-pattern-fast-slow-pointers/3-Start-of-LinkedList-Cycle-medium/1.1-Start-of-LinkedList-Cycle-medium-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Start-of-LinkedList-Cycle</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/4-pattern-fast-slow-pointers/4-Happy-Number-medium/1.1-Happy-Number-medium-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Happy-Number</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/4-pattern-fast-slow-pointers/5-Middle-of-the-LinkedList-easy/1.1-Middle-of-the-LinkedList-easy-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Middle-of-the-LinkedList</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/4-pattern-fast-slow-pointers/6-Problem-Challenge-1/1.1-Problem-Challenge-1-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Problem-Challenge-1</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/4-pattern-fast-slow-pointers/7-Solution-Review-Problem-Challenge-1/1.1-Solution-Review_-Problem-Challenge-1.html">Solution-Review-Problem-Challenge-1</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/4-pattern-fast-slow-pointers/8-Problem-Challenge-2/1.1-Problem-Challenge-2-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Problem-Challenge-2</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/4-pattern-fast-slow-pointers/9-Solution-Review-Problem-Challenge-2/1.1-Solution-Review_-Problem-Challenge-2.html">Solution-Review-Problem-Challenge-2</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/4-pattern-fast-slow-pointers/10-Problem-Challenge-3/1.1-Problem-Challenge-3-Grokking-the-Coding-Interview_-Patterns-for-Coding-Questions.html">Problem-Challenge-3</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/4-pattern-fast-slow-pointers/11-Solution-Review-Problem-Challenge-3/1.1Solution-Review_-Problem-Challenge-3.html">Solution-Review-Problem-Challenge-3</a></h3></li>
+			</ul>
+		</li>
+		<li><h2>Interview Pattern - Merge Intervals</h2>
+			<ul>
+				<li><h3><a href="./grokking-coding-interviews/5. Pattern Merge Intervals/1. Introduction/Introduction - Grokking the Coding Interview_ Patterns for Coding Questions.html">Introduction</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/5. Pattern Merge Intervals/2. Merge Intervals (medium)/1.1Merge Intervals (medium) - Grokking the Coding Interview_ Patterns for Coding Questions.html">Merge Intervals</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/5. Pattern Merge Intervals/4. Intervals Intersection (medium)/1.1Intervals Intersection (medium) - Grokking the Coding Interview_ Patterns for Coding Questions.html">Intervals Intersection</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/5. Pattern Merge Intervals/5. Conflicting Appointments (medium)/1.1Conflicting Appointments (medium) -.html">Conflicting Appointments</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/5. Pattern Merge Intervals/6. Problem Challenge 1/1.1Problem Challenge 1 - Grokking the Coding Interview_ Patterns for Coding Questions.html">Problem Challenge 1</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/5. Pattern Merge Intervals/7. Solution Review Problem Challenge 1/1.1Solution Review_ Problem Challenge 1 -.html">Solution Review Problem Challenge 1</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/5. Pattern Merge Intervals/8. Problem Challenge 2/1.1Problem Challenge 2 - Grokking the Coding Interview_ Patterns for Coding Questions.html">Problem Challenge 2</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/5. Pattern Merge Intervals/9. Solution Review Problem Challenge 2/1.1Solution Review_ Problem Challenge 2 -.html">Solution Review Problem Challenge 2</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/5. Pattern Merge Intervals/10. Problem Challenge 3/1.1Problem Challenge 3 - Grokking the Coding Interview_ Patterns for Coding Questions.html">Problem Challenge 3</a></h3></li>
+				<li><h3><a href="./grokking-coding-interviews/5. Pattern Merge Intervals/11. Solution Review Problem Challenge 3/1.1.1Solution Review_ Problem Challenge 3 -.html">Solution Review Problem Challenge 3.1</a></h3></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<footer id='footer'>
+	✰ <strong>Credit</strong>: <br>This is a softcopy of the educative.io Grokking the object oriented design interview and grokking the system design interview.<br>
+</footer>
+
+<script src='script.js'></script>
+</body>
+</html>
+
