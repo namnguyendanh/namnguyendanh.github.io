@@ -1,6 +1,6 @@
 ---
-permalink: /cv/
-title: Curriculum Vitae
+permalink: /resume/
+title: Resume
 author_profile: true
 ---
 Updated: Nov 2022
