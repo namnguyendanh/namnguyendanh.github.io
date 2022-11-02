@@ -5,9 +5,9 @@ title: "About"
 Hi all, 
 
 I've categorized all posts into 3 categories:
-- Technology
+- Technology: Cloud Computing, ML/DL, System Architecture, ...
 - Tea culture
-- ...
+- Russian Literature: My favorite authors are Pyodor Dostoevsky, Maxim Gorky, ...
 
 
 
